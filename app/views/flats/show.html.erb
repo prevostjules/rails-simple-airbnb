@@ -1,0 +1,18 @@
+<%= image_tag @flat.picture_url, alt: @flat.name %>
+<div>
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+</div>
+
+<div>
+  <h2>A bit more about this flat</h2>
+  <p><%= @flat.description %></p>
+</div>
+
+<div>
+  <h2>Details</h2>
+  <p><i class="fas fa-users"></i><%= @flat.number_of_guests %></p>
+  <p><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></p>
+</div>
+
+<%= link_to "Edit", edit_flat_path(@flat) %>
